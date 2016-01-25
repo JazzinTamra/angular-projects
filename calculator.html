@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width+device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/calculator.css" type="text/css">
     <script type="text/javascript" src="assets/angular.min.js"></script>
     <script type="text/javascript" src="assets/calculator.js"></script>
@@ -45,9 +45,7 @@
             <div>
                 <h4>Lumens</h4>
                 <p>Brightness <br>of bulb</p>
-                <select name="" id="">
-                    <option value="600">600</option>
-                    <option value="900">900</option>
+                <select ng-model="current_lumens" ng-options="o as o for o in lumen_options">
                 </select>
             </div>
             <div>
