@@ -37,10 +37,5 @@
 
 })();
 
-//function within () allows this to live in this file with other javascripts
-//declaring the variable app to be myCalculator
-//defining controller(name),service is $scope, putting $scope in the function allows
-//the list in the drop down menu
-//set the options to begin with this
 
 
