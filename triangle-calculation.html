@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myTriangle" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/triangle.css" type="text/css">
+    <script type="text/javascript" src="assets/angular.min.js"></script>
+    <script type="text/javascript" src="assets/triangle.js"></script>
+    <title>Calculate the area of a triangle</title>
+</head>
+<body>
+<div id="myTriangle" ng-controller="TriangleController">
+    <main>
+        <section class="inc">
+            <div>
+                <h4>Triangle Area</h4>
+                <p>{{area}}</p>
+            </div>
+        </section>
+    </main>
+    <form>
+        <div>
+            <h4>Side a</h4>
+            <input title="Side b" type="number" ng-change="calculate()" ng-model="side_a" value="{{side_a}}">
+        </div>
+        <div>
+            <h4>Side b</h4>
+            <input title="Side b" type="number" ng-change="calculate()" ng-model="side_b" value="{{side_b}}">
+        </div>
+        <div>
+            <h4>Side c</h4>
+            <input title="Side c" ng-change="calculate()" type="number" ng-model="side_c" value="{{side_c}}">
+        </div>
+        <section class="inc">
+            <div>
+                <h4>Calculate the area of a triangle by entering the length of the 3 sides.</h4>
+            </div>
+        </section>
+    </form>
+</div>
+</body>
+</html>

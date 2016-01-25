@@ -1,0 +1,174 @@
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
+
+#myTriangle {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    max-width: 800px;
+}
+
+#myTriangle main {
+    background-color: #444;
+
+}
+#myTriangle main section {
+    /*width: 25%;*/
+    /*float: left;*/
+    text-align: center;
+    padding-top: 205px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    /*background-size: 63px 100px;*/
+}
+#myTriangle main::after {
+    content:'';
+    display: block;
+    clear: both;
+}
+
+#myTriangle main section.inc {
+    background-color: #ba2d2d;
+    background-image: url("../images/tirangle.png");
+    align-content: center;
+}
+
+/*targets divs that follow a section tag*/
+#myTriangle main section > div {
+    padding: 5px 0;
+    background-color: rgba(0,0,0,.15);
+}
+
+#myTriangle main h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+}
+
+#myTriangle main p {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/*targets p tags that follow a p tag...in this case the price*/
+#myTriangle main p + p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+#myTriangle form {
+    background-color: #000;
+    margin: 0;
+    padding: 10px 0px;
+}
+
+/*targets divs that follow a section tag*/
+#myTriangle main form > div {
+    padding: 0;
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#myTriangle form br {
+    display: none;
+}
+
+#myTriangle form > div {
+    color: #fff;
+    width: 33%;
+    float: left;
+    text-align: center;
+    padding: 0px 0 5px 0;
+}
+
+#myTriangle form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#myTriangle form h4 {
+    color: #aaa;
+    padding: 0 0 -5px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+}
+
+#myTriangle form p {
+    color: #888;
+    margin: 0 0 6px 0;
+    font-size: .9em;
+}
+#myTriangle form input[type=number] {
+    width: 50px;
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#myTriangle form select {
+    font-size: 1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    background: #fff url("../images/icons_arrows.svg") no-repeat right 6px;
+    background-size: 30px 20px;
+    padding: 3px 30px 3px 5px;
+}
+
+#myTriangle form select::-ms-expand {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    #myTriangle {
+        font-size: 15px;
+    }
+    #myTriangle main section {
+        background-size: 45px 71px;
+        padding-top: 80px;
+    }
+    #myTriangle main h4 {
+        margin: 0;
+        font-size: .75em;
+        letter-spacing: 0;
+    }
+    #myTriangle main p {
+        font-size: 1.1em;
+    }
+    #myTriangle main p + p {
+        font-size: 1em;
+    }
+    #myTriangle main p + p::after {
+        display: block;
+        margin-top: -10px;
+        color: #ffffff;
+    }
+
+    #myTriangle form h4 {
+        font-size: 1.1em;
+        margin: 0;
+    }
+    #myTriangle form p {
+        font-size: .8em;
+        line-height: 14px
+    }
+    #myTriangle form br {
+        display: inline
+    }
+    #myTriangle form input[type=number] {
+        width: 30px;
+        font-size: .8em
+    }
+    #myTriangle form select {
+        font-size: .8em
+    }
+}
