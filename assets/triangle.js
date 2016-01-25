@@ -14,7 +14,7 @@
 
         $scope.calculate = function(){
             $scope.perimeter = ($scope.side_a + $scope.side_b + $scope.side_c) / 2;
-            $scope.area = Math.sqrt($scope.perimeter * (($scope.perimeter - $scope.side_a)*($scope.perimeter - $scope.side_b)*($scope.perimeter - $scope.side_c))).toFixed(2);
+            $scope.area = Math.sqrt($scope.perimeter * (($scope.perimeter - $scope.side_a)*($scope.perimeter - $scope.side_b)*($scope.perimeter - $scope.side_c)));
 
             //if($scope.side_a < 0 ){ $scope.side_a = .01;}
             //if($scope.side_b < 0 ){ $scope.side_b = .01;}

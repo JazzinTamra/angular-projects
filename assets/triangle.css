@@ -13,17 +13,11 @@
 
 #myTriangle main {
     background-color: #444;
-
 }
 #myTriangle main section {
-    /*width: 25%;*/
-    /*float: left;*/
     text-align: center;
-    padding-top: 205px;
     color: #fff;
-    background-repeat: no-repeat;
-    background-position: center 15px;
-    /*background-size: 63px 100px;*/
+
 }
 #myTriangle main::after {
     content:'';
@@ -31,9 +25,17 @@
     clear: both;
 }
 
-#myTriangle main section.inc {
+#myTriangle main section.inc_top {
     background-color: #ba2d2d;
     background-image: url("../images/tirangle.png");
+    align-content: center;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+    padding-top: 205px;
+}
+
+#myTriangle main section.inc_bottom {
+    background-color: rgba(186,45,45,.50);
     align-content: center;
 }
 
@@ -134,7 +136,7 @@
     }
     #myTriangle main section {
         background-size: 45px 71px;
-        padding-top: 80px;
+        /*padding-top: 80px;*/
     }
     #myTriangle main h4 {
         margin: 0;

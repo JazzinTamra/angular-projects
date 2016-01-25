@@ -11,14 +11,19 @@
 <body>
 <div id="myTriangle" ng-controller="TriangleController">
     <main>
-        <section class="inc">
+        <section class="inc_top">
             <div>
                 <h4>Triangle Area</h4>
-                <p>{{area}}</p>
             </div>
         </section>
     </main>
     <form>
+        <section class="inc">
+            <div>
+                <h4>Calculate the area of a triangle by entering the length of the 3 sides.</h4>
+            </div>
+        </section>
+
         <div>
             <h4>Side a</h4>
             <input title="Side b" type="number" ng-change="calculate()" ng-model="side_a" value="{{side_a}}">
@@ -31,12 +36,15 @@
             <h4>Side c</h4>
             <input title="Side c" ng-change="calculate()" type="number" ng-model="side_c" value="{{side_c}}">
         </div>
-        <section class="inc">
+    </form>
+    <main>
+        <section class="inc_bottom">
             <div>
-                <h4>Calculate the area of a triangle by entering the length of the 3 sides.</h4>
+                <p>{{area}}</p>
             </div>
         </section>
-    </form>
+    </main>
+
 </div>
 </body>
 </html>
